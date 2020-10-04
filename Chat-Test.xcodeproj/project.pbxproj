@@ -22,6 +22,7 @@
 		A5AC489D2529B0A10054B9AD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AC489C2529B0A10054B9AD /* SignInViewController.swift */; };
 		A5AC48A22529BB9C0054B9AD /* ChatGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AC48A12529BB9C0054B9AD /* ChatGroupViewController.swift */; };
 		A5AC48A72529BBF80054B9AD /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AC48A62529BBF80054B9AD /* UserListViewController.swift */; };
+		A5AC48AC2529C3F70054B9AD /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AC48AB2529C3F70054B9AD /* ChatMessageCell.swift */; };
 		C8B14A4B41E2C5686C0238D1 /* Pods_Chat_TestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A2F4F93316AB92A75190A0E /* Pods_Chat_TestTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		A5AC489C2529B0A10054B9AD /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		A5AC48A12529BB9C0054B9AD /* ChatGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGroupViewController.swift; sourceTree = "<group>"; };
 		A5AC48A62529BBF80054B9AD /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		A5AC48AB2529C3F70054B9AD /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
 		B217252F3DA14F9C74B79244 /* Pods_Chat_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chat_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E63517541DA1B6A2E2A19ABA /* Pods-Chat-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat-Test.release.xcconfig"; path = "Target Support Files/Pods-Chat-Test/Pods-Chat-Test.release.xcconfig"; sourceTree = "<group>"; };
 		EA25B2D3959880F5731A99FE /* Pods-Chat-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat-Test.debug.xcconfig"; path = "Target Support Files/Pods-Chat-Test/Pods-Chat-Test.debug.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				A5AC489C2529B0A10054B9AD /* SignInViewController.swift */,
 				A5AC48A12529BB9C0054B9AD /* ChatGroupViewController.swift */,
 				A5AC48A62529BBF80054B9AD /* UserListViewController.swift */,
+				A5AC48AB2529C3F70054B9AD /* ChatMessageCell.swift */,
 			);
 			path = "Chat-Test";
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				A5AC489D2529B0A10054B9AD /* SignInViewController.swift in Sources */,
 				A56FFAC92528C04A00333312 /* ViewController.swift in Sources */,
 				A5AC48A22529BB9C0054B9AD /* ChatGroupViewController.swift in Sources */,
+				A5AC48AC2529C3F70054B9AD /* ChatMessageCell.swift in Sources */,
 				A56FFAC52528C04A00333312 /* AppDelegate.swift in Sources */,
 				A56FFAC72528C04A00333312 /* SceneDelegate.swift in Sources */,
 			);
@@ -534,7 +538,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -589,7 +593,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

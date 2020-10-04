@@ -52,7 +52,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UICollectionViewDel
             cell.containerView.backgroundColor = UIColor.white
         }
         
-        if message.text.characters.count > 0 {
+        if message.text.count > 0 {
             cell.containerViewWidthAnchor?.constant = measuredFrameHeightForEachMessage(message: message.text).width + 32
         }
         return cell
@@ -76,7 +76,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UICollectionViewDel
     private func measuredFrameHeightForEachMessage(message: String) -> CGRect {
         let size = CGSize(width: 200, height: 1000)
         let options = NSStringDrawingOptions.usesFontLeading.union(.usesLineFragmentOrigin)
-        return NSString(string: message).boundingRect(with: size, options: options, attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 16)], context: nil)
+        return NSString(string: message).boundingRect(with: size, options: options, attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16)], context: nil)
     }
     
     @IBAction func sendButtonTapped(_ sender: UIButton) {
@@ -148,18 +148,18 @@ class ViewController: UIViewController, UITextFieldDelegate, UICollectionViewDel
         sendButton.isEnabled = false
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        subscribeToKeyboardNotifications()
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        unsubscribeFromKeyboardNotifications()
-    }
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        subscribeToKeyboardNotifications()
+//    }
+//
+//    override func viewDidDisappear(_ animated: Bool) {
+//        super.viewDidDisappear(animated)
+//        unsubscribeFromKeyboardNotifications()
+//    }
     
     // get keyboard height and shift the view from bottom to higher
-    func keyboardWillShow(_ notification: Notification) {
+    @objc func keyboardWillShow(_ notification: Notification) {
         if chatTextField.isFirstResponder {
             height = getKeyboardHeight(notification)
             chatCollectionView.frame.origin.y = height
@@ -167,7 +167,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UICollectionViewDel
         }
     }
     
-    func keyboardWillHide(_ notification: Notification) {
+    @objc func keyboardWillHide(_ notification: Notification) {
         if chatTextField.isFirstResponder {
             chatCollectionView.frame.origin.y = 0
             view.frame.origin.y = 0
@@ -176,19 +176,19 @@ class ViewController: UIViewController, UITextFieldDelegate, UICollectionViewDel
     
     func getKeyboardHeight(_ notification: Notification) -> CGFloat {
         let userInfo = notification.userInfo
-        let keyboardSize = userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue
+        let keyboardSize = userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! NSValue
         return keyboardSize.cgRectValue.height
     }
     
-    func subscribeToKeyboardNotifications() {
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: .UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: .UIKeyboardWillHide, object: nil)
-    }
-    
-    func unsubscribeFromKeyboardNotifications() {
-        NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillHide, object: nil)
-    }
+//    func subscribeToKeyboardNotifications() {
+//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: .UIResponder.keyboardWillShowNotification, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: .UIResponder.keyboardWillHideNotification, object: nil)
+//    }
+//
+//    func unsubscribeFromKeyboardNotifications() {
+//        NotificationCenter.default.removeObserver(self, name: .UIResponder.keyboardWillShowNotification, object: nil)
+//        NotificationCenter.default.removeObserver(self, name: .UIResponder.keyboardWillHideNotification, object: nil)
+//    }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         chatTextField.resignFirstResponder()
