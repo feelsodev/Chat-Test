@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,7 @@
 		A56FFADC2528C04C00333312 /* Chat_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56FFADB2528C04C00333312 /* Chat_TestTests.swift */; };
 		A56FFAE72528C04C00333312 /* Chat_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56FFAE62528C04C00333312 /* Chat_TestUITests.swift */; };
 		A5AC487F2529A7F40054B9AD /* FirebaseDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AC487E2529A7F40054B9AD /* FirebaseDataService.swift */; };
+		A5AC48982529ADD90054B9AD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AC48972529ADD90054B9AD /* Model.swift */; };
 		C8B14A4B41E2C5686C0238D1 /* Pods_Chat_TestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A2F4F93316AB92A75190A0E /* Pods_Chat_TestTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		A56FFAE62528C04C00333312 /* Chat_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat_TestUITests.swift; sourceTree = "<group>"; };
 		A56FFAE82528C04C00333312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5AC487E2529A7F40054B9AD /* FirebaseDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDataService.swift; sourceTree = "<group>"; };
+		A5AC48972529ADD90054B9AD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		B217252F3DA14F9C74B79244 /* Pods_Chat_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chat_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E63517541DA1B6A2E2A19ABA /* Pods-Chat-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat-Test.release.xcconfig"; path = "Target Support Files/Pods-Chat-Test/Pods-Chat-Test.release.xcconfig"; sourceTree = "<group>"; };
 		EA25B2D3959880F5731A99FE /* Pods-Chat-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat-Test.debug.xcconfig"; path = "Target Support Files/Pods-Chat-Test/Pods-Chat-Test.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,7 +105,6 @@
 				09CE2818715A6FBE8140D514 /* Pods-Chat-TestTests.debug.xcconfig */,
 				564FB25020D2E5F7CD29B23C /* Pods-Chat-TestTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -135,11 +136,12 @@
 				A56FFAC42528C04A00333312 /* AppDelegate.swift */,
 				A56FFAC62528C04A00333312 /* SceneDelegate.swift */,
 				A56FFAC82528C04A00333312 /* ViewController.swift */,
+				A5AC487E2529A7F40054B9AD /* FirebaseDataService.swift */,
 				A56FFACA2528C04A00333312 /* Main.storyboard */,
 				A56FFACD2528C04C00333312 /* Assets.xcassets */,
 				A56FFACF2528C04C00333312 /* LaunchScreen.storyboard */,
 				A56FFAD22528C04C00333312 /* Info.plist */,
-				A5AC487E2529A7F40054B9AD /* FirebaseDataService.swift */,
+				A5AC48972529ADD90054B9AD /* Model.swift */,
 			);
 			path = "Chat-Test";
 			sourceTree = "<group>";
@@ -410,6 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5AC48982529ADD90054B9AD /* Model.swift in Sources */,
 				A5AC487F2529A7F40054B9AD /* FirebaseDataService.swift in Sources */,
 				A56FFAC92528C04A00333312 /* ViewController.swift in Sources */,
 				A56FFAC52528C04A00333312 /* AppDelegate.swift in Sources */,
