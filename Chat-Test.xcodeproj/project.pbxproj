@@ -12,17 +12,10 @@
 		A56FFAC52528C04A00333312 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56FFAC42528C04A00333312 /* AppDelegate.swift */; };
 		A56FFAC72528C04A00333312 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56FFAC62528C04A00333312 /* SceneDelegate.swift */; };
 		A56FFAC92528C04A00333312 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56FFAC82528C04A00333312 /* ViewController.swift */; };
-		A56FFACC2528C04A00333312 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56FFACA2528C04A00333312 /* Main.storyboard */; };
 		A56FFACE2528C04C00333312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56FFACD2528C04C00333312 /* Assets.xcassets */; };
 		A56FFAD12528C04C00333312 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56FFACF2528C04C00333312 /* LaunchScreen.storyboard */; };
 		A56FFADC2528C04C00333312 /* Chat_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56FFADB2528C04C00333312 /* Chat_TestTests.swift */; };
 		A56FFAE72528C04C00333312 /* Chat_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56FFAE62528C04C00333312 /* Chat_TestUITests.swift */; };
-		A5AC487F2529A7F40054B9AD /* FirebaseDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AC487E2529A7F40054B9AD /* FirebaseDataService.swift */; };
-		A5AC48982529ADD90054B9AD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AC48972529ADD90054B9AD /* Model.swift */; };
-		A5AC489D2529B0A10054B9AD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AC489C2529B0A10054B9AD /* SignInViewController.swift */; };
-		A5AC48A22529BB9C0054B9AD /* ChatGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AC48A12529BB9C0054B9AD /* ChatGroupViewController.swift */; };
-		A5AC48A72529BBF80054B9AD /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AC48A62529BBF80054B9AD /* UserListViewController.swift */; };
-		A5AC48AC2529C3F70054B9AD /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AC48AB2529C3F70054B9AD /* ChatMessageCell.swift */; };
 		C8B14A4B41E2C5686C0238D1 /* Pods_Chat_TestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A2F4F93316AB92A75190A0E /* Pods_Chat_TestTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +45,6 @@
 		A56FFAC42528C04A00333312 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A56FFAC62528C04A00333312 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A56FFAC82528C04A00333312 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A56FFACB2528C04A00333312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A56FFACD2528C04C00333312 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A56FFAD02528C04C00333312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A56FFAD22528C04C00333312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,12 +54,6 @@
 		A56FFAE22528C04C00333312 /* Chat-TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chat-TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56FFAE62528C04C00333312 /* Chat_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat_TestUITests.swift; sourceTree = "<group>"; };
 		A56FFAE82528C04C00333312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A5AC487E2529A7F40054B9AD /* FirebaseDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDataService.swift; sourceTree = "<group>"; };
-		A5AC48972529ADD90054B9AD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		A5AC489C2529B0A10054B9AD /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		A5AC48A12529BB9C0054B9AD /* ChatGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGroupViewController.swift; sourceTree = "<group>"; };
-		A5AC48A62529BBF80054B9AD /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
-		A5AC48AB2529C3F70054B9AD /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
 		B217252F3DA14F9C74B79244 /* Pods_Chat_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chat_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E63517541DA1B6A2E2A19ABA /* Pods-Chat-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat-Test.release.xcconfig"; path = "Target Support Files/Pods-Chat-Test/Pods-Chat-Test.release.xcconfig"; sourceTree = "<group>"; };
 		EA25B2D3959880F5731A99FE /* Pods-Chat-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat-Test.debug.xcconfig"; path = "Target Support Files/Pods-Chat-Test/Pods-Chat-Test.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,16 +130,9 @@
 				A56FFAC42528C04A00333312 /* AppDelegate.swift */,
 				A56FFAC62528C04A00333312 /* SceneDelegate.swift */,
 				A56FFAC82528C04A00333312 /* ViewController.swift */,
-				A5AC487E2529A7F40054B9AD /* FirebaseDataService.swift */,
-				A56FFACA2528C04A00333312 /* Main.storyboard */,
 				A56FFACD2528C04C00333312 /* Assets.xcassets */,
 				A56FFACF2528C04C00333312 /* LaunchScreen.storyboard */,
 				A56FFAD22528C04C00333312 /* Info.plist */,
-				A5AC48972529ADD90054B9AD /* Model.swift */,
-				A5AC489C2529B0A10054B9AD /* SignInViewController.swift */,
-				A5AC48A12529BB9C0054B9AD /* ChatGroupViewController.swift */,
-				A5AC48A62529BBF80054B9AD /* UserListViewController.swift */,
-				A5AC48AB2529C3F70054B9AD /* ChatMessageCell.swift */,
 			);
 			path = "Chat-Test";
 			sourceTree = "<group>";
@@ -296,7 +275,6 @@
 			files = (
 				A56FFAD12528C04C00333312 /* LaunchScreen.storyboard in Resources */,
 				A56FFACE2528C04C00333312 /* Assets.xcassets in Resources */,
-				A56FFACC2528C04A00333312 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,13 +402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5AC48982529ADD90054B9AD /* Model.swift in Sources */,
-				A5AC48A72529BBF80054B9AD /* UserListViewController.swift in Sources */,
-				A5AC487F2529A7F40054B9AD /* FirebaseDataService.swift in Sources */,
-				A5AC489D2529B0A10054B9AD /* SignInViewController.swift in Sources */,
 				A56FFAC92528C04A00333312 /* ViewController.swift in Sources */,
-				A5AC48A22529BB9C0054B9AD /* ChatGroupViewController.swift in Sources */,
-				A5AC48AC2529C3F70054B9AD /* ChatMessageCell.swift in Sources */,
 				A56FFAC52528C04A00333312 /* AppDelegate.swift in Sources */,
 				A56FFAC72528C04A00333312 /* SceneDelegate.swift in Sources */,
 			);
@@ -468,14 +440,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A56FFACA2528C04A00333312 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A56FFACB2528C04A00333312 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A56FFACF2528C04C00333312 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
