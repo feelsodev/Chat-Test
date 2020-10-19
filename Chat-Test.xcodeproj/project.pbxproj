@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		605A961A69F2D60F7E851582 /* Pods_Chat_Test_Chat_TestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41DE7B2E9EFB4C7C4AA5524 /* Pods_Chat_Test_Chat_TestUITests.framework */; };
 		6FFFE696AF1F5B42F47D1144 /* Pods_Chat_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B217252F3DA14F9C74B79244 /* Pods_Chat_Test.framework */; };
-		A540547425398F3800E1C11F /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A540547325398F3800E1C11F /* SocketIOManager.swift */; };
 		A56FFAC52528C04A00333312 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56FFAC42528C04A00333312 /* AppDelegate.swift */; };
 		A56FFAC72528C04A00333312 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56FFAC62528C04A00333312 /* SceneDelegate.swift */; };
 		A56FFAC92528C04A00333312 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56FFAC82528C04A00333312 /* ViewController.swift */; };
@@ -42,7 +41,6 @@
 		4F86A89F4EE03A0A80C36FDE /* Pods-Chat-Test-Chat-TestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat-Test-Chat-TestUITests.release.xcconfig"; path = "Target Support Files/Pods-Chat-Test-Chat-TestUITests/Pods-Chat-Test-Chat-TestUITests.release.xcconfig"; sourceTree = "<group>"; };
 		564FB25020D2E5F7CD29B23C /* Pods-Chat-TestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat-TestTests.release.xcconfig"; path = "Target Support Files/Pods-Chat-TestTests/Pods-Chat-TestTests.release.xcconfig"; sourceTree = "<group>"; };
 		7A2F4F93316AB92A75190A0E /* Pods_Chat_TestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chat_TestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A540547325398F3800E1C11F /* SocketIOManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
 		A56FFAC12528C04A00333312 /* Chat-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chat-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56FFAC42528C04A00333312 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A56FFAC62528C04A00333312 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,7 +133,6 @@
 				A56FFACD2528C04C00333312 /* Assets.xcassets */,
 				A56FFACF2528C04C00333312 /* LaunchScreen.storyboard */,
 				A56FFAD22528C04C00333312 /* Info.plist */,
-				A540547325398F3800E1C11F /* SocketIOManager.swift */,
 			);
 			path = "Chat-Test";
 			sourceTree = "<group>";
@@ -407,7 +404,6 @@
 			files = (
 				A56FFAC92528C04A00333312 /* ViewController.swift in Sources */,
 				A56FFAC52528C04A00333312 /* AppDelegate.swift in Sources */,
-				A540547425398F3800E1C11F /* SocketIOManager.swift in Sources */,
 				A56FFAC72528C04A00333312 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
