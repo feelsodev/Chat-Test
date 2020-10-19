@@ -3,11 +3,14 @@ PODS:
   - Socket.IO-Client-Swift (15.2.0):
     - Starscream (~> 3.1)
   - Starscream (3.1.1)
+  - SwiftKeychainWrapper (4.0.1)
   - Then (2.7.0)
 
 DEPENDENCIES:
   - SnapKit (~> 5.0.0)
   - Socket.IO-Client-Swift (~> 15.2.0)
+  - Starscream
+  - SwiftKeychainWrapper
   - Then
 
 SPEC REPOS:
@@ -15,14 +18,16 @@ SPEC REPOS:
     - SnapKit
     - Socket.IO-Client-Swift
     - Starscream
+    - SwiftKeychainWrapper
     - Then
 
 SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   Socket.IO-Client-Swift: 1e3e3a1f09f3312a167f0d781eb2f383d477357c
   Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
+  SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
   Then: acfe0be7e98221c6204e12f8161459606d5d822d
 
-PODFILE CHECKSUM: 57a032b641235f2e3a0e80181d87a3cc81281b3b
+PODFILE CHECKSUM: 04ad51ccb08047ae66aa40df38660a7d9407759a
 
 COCOAPODS: 1.9.1
