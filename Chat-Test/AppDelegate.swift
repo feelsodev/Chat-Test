@@ -6,15 +6,19 @@
 //
 
 import UIKit
-import Firebase
+import SwiftKeychainWrapper
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        FirebaseApp.configure()
+        if KeychainWrapper.standard.string(forKey: "device_id") == nil {
+            if let uuid = UIDevice.current.identifierForVendor?.uuidString {
+                print(uuid)
+                let saveSuccessful: Bool = KeychainWrapper.standard.set(uuid, forKey: "device_id")
+                print("is successful : \(saveSuccessful)")
+            }
+        }
         // Override point for customization after application launch.
         return true
     }
