@@ -7,8 +7,8 @@
 
 import UIKit
 import Starscream
-import SwiftKeychainWrapper
 import Then
+import SwiftKeychainWrapper
 
 class ViewController: UIViewController, WebSocketDelegate {
     
@@ -20,22 +20,19 @@ class ViewController: UIViewController, WebSocketDelegate {
         $0.addTarget(self, action: #selector(writeText), for: .touchUpInside)
         $0.translatesAutoresizingMaskIntoConstraints = false
     }
-    var connectButton = UIButton().then {
-        $0.setTitle("연결해보자!!", for: .normal)
-        $0.backgroundColor = .brown
-        $0.addTarget(self, action: #selector(connectSocket), for: .touchUpInside)
-        $0.translatesAutoresizingMaskIntoConstraints = false
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         layout()
         view.backgroundColor = .white
-        var request = URLRequest(url: URL(string: "wss://echo.websocket.org")!)
+        var request = URLRequest(url: URL(string: "ws://ec2-13-124-151-24.ap-northeast-2.compute.amazonaws.com:9999")!)
         request.timeoutInterval = 5
-        socket = WebSocket(request: request)
-        socket.delegate = self
-        socket.connect()
+        let retrievedString: String? = KeychainWrapper.standard.string(forKey: "device_id")
+        print(retrievedString!)
+//        print(UIDevice.current.identifierForVendor?.uuidString)
+//        socket = WebSocket(request: request)
+//        socket.delegate = self
+//        socket.connect()
     }
     
     // MARK: - WebSocketDelegate
@@ -67,17 +64,10 @@ class ViewController: UIViewController, WebSocketDelegate {
     
     func layout() {
         view.addSubview(sendMessage)
-        view.addSubview(connectButton)
+
         
         sendMessage.do {
             $0.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-            $0.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-            $0.widthAnchor.constraint(equalToConstant: 100).isActive = true
-            $0.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        }
-        
-        connectButton.do {
-            $0.topAnchor.constraint(equalTo: sendMessage.bottomAnchor).isActive = true
             $0.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
             $0.widthAnchor.constraint(equalToConstant: 100).isActive = true
             $0.heightAnchor.constraint(equalToConstant: 50).isActive = true
@@ -87,10 +77,6 @@ class ViewController: UIViewController, WebSocketDelegate {
     // MARK: Write Text Action
     @objc func writeText() {
         socket.write(string: "재인재인")
-    }
-    
-    @objc func connectSocket() {
-        SocketIOManager.shared.connect()
     }
     
     // MARK: Disconnect Action
